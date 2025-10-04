@@ -597,7 +597,7 @@ body.scrolled {
     padding: .70em 1.4em;
 
     /* wygląd kapsuły */
-    border-radius: 9999px;
+    border-radius: 9999px !important;
     background: rgba(0, 0, 0, .28);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -3329,7 +3329,7 @@ body.scrolled {
 }
 
 .ai-text {
-    text-shadow: 
+    text-shadow:
         0 0 5px rgba(0, 229, 255, 0.6),
         0 0 10px rgba(0, 229, 255, 0.4),
         0 0 15px rgba(0, 229, 255, 0.3),
@@ -3358,6 +3358,7 @@ body.scrolled {
         transform: scale(1);
         opacity: 0.3;
     }
+
     100% {
         transform: scale(1.1);
         opacity: 0.6;
@@ -3365,13 +3366,8 @@ body.scrolled {
 }
 
 .nav-logo-image {
-    filter: 
-        drop-shadow(0 0 3px rgba(0, 229, 255, 0.8))
-        drop-shadow(0 0 6px rgba(0, 229, 255, 0.6))
-        drop-shadow(0 0 12px rgba(0, 229, 255, 0.4))
-        drop-shadow(0 0 18px rgba(0, 229, 255, 0.3))
-        drop-shadow(0 0 24px rgba(0, 229, 255, 0.2))
-        drop-shadow(0 0 30px rgba(0, 229, 255, 0.1)) !important;
+    filter:
+        drop-shadow(0 0 3px rgba(0, 229, 255, 0.8)) drop-shadow(0 0 6px rgba(0, 229, 255, 0.6)) drop-shadow(0 0 12px rgba(0, 229, 255, 0.4)) drop-shadow(0 0 18px rgba(0, 229, 255, 0.3)) drop-shadow(0 0 24px rgba(0, 229, 255, 0.2)) drop-shadow(0 0 30px rgba(0, 229, 255, 0.1)) !important;
     position: relative;
 }
 
@@ -3393,6 +3389,7 @@ body.scrolled {
         opacity: 0.3;
         transform: scale(0.8);
     }
+
     100% {
         opacity: 0.6;
         transform: scale(1.2);
@@ -3400,18 +3397,13 @@ body.scrolled {
 }
 
 .nav-logo-image:hover {
-    filter: 
-        drop-shadow(0 0 5px rgba(0, 229, 255, 1))
-        drop-shadow(0 0 10px rgba(0, 229, 255, 0.8))
-        drop-shadow(0 0 20px rgba(0, 229, 255, 0.6))
-        drop-shadow(0 0 30px rgba(0, 229, 255, 0.4))
-        drop-shadow(0 0 40px rgba(0, 229, 255, 0.3))
-        drop-shadow(0 0 50px rgba(0, 229, 255, 0.2)) !important;
+    filter:
+        drop-shadow(0 0 5px rgba(0, 229, 255, 1)) drop-shadow(0 0 10px rgba(0, 229, 255, 0.8)) drop-shadow(0 0 20px rgba(0, 229, 255, 0.6)) drop-shadow(0 0 30px rgba(0, 229, 255, 0.4)) drop-shadow(0 0 40px rgba(0, 229, 255, 0.3)) drop-shadow(0 0 50px rgba(0, 229, 255, 0.2)) !important;
 }
 
 /* 3D Glow for other elements */
 .tile-icon {
-    text-shadow: 
+    text-shadow:
         0 0 3px rgba(0, 229, 255, 0.8),
         0 0 6px rgba(0, 229, 255, 0.6),
         0 0 12px rgba(0, 229, 255, 0.4),
@@ -3421,7 +3413,7 @@ body.scrolled {
 }
 
 .satisfaction-percentage {
-    text-shadow: 
+    text-shadow:
         0 0 5px rgba(0, 229, 255, 0.8),
         0 0 10px rgba(0, 229, 255, 0.6),
         0 0 15px rgba(0, 229, 255, 0.4),
@@ -3432,20 +3424,43 @@ body.scrolled {
 }
 
 .rating-display {
-    box-shadow: 
+    box-shadow:
         0 0 10px rgba(0, 229, 255, 0.3),
         0 0 20px rgba(0, 229, 255, 0.2),
         0 0 30px rgba(0, 229, 255, 0.1),
         0 0 40px rgba(0, 229, 255, 0.05) !important;
 }
 
-/* Remove all square/rectangular effects */
-* {
-    border-radius: inherit !important;
+/* Remove all square/rectangular effects - but keep pill rounded */
+.pill {
+    border-radius: 9999px !important;
+}
+
+/* Ensure pill stays perfectly rounded */
+.pill,
+.pill::before,
+.pill::after {
+    border-radius: 9999px !important;
+}
+
+/* Mobile pill rounded */
+@media (max-width: 768px) {
+    .pill {
+        border-radius: 9999px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .pill {
+        border-radius: 9999px !important;
+    }
 }
 
 /* Ensure smooth gradients */
-.ai-text, .nav-logo-image, .tile-icon, .satisfaction-percentage {
+.ai-text,
+.nav-logo-image,
+.tile-icon,
+.satisfaction-percentage {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
