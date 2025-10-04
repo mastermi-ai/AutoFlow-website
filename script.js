@@ -651,10 +651,46 @@ function refreshToTop() {
     }, 500);
 }
 
+// Mobile hamburger menu
+function initMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navUnified = document.querySelector('.nav-unified');
+
+    if (hamburger && navUnified) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navUnified.classList.toggle('active');
+            document.body.style.overflow = navUnified.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        // Close menu when clicking on links
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navUnified.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navUnified.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navUnified.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+}
+
 // Initialize all features safely
 document.addEventListener('DOMContentLoaded', function () {
     // Uruchom liquid blur effect
     initLiquidBlur();
+
+    // Initialize mobile menu
+    initMobileMenu();
 
     // Uruchom animację słów
     animateRotatingWords();
