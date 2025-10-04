@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFlow - Automatyzacja Procesów Biznesowych</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="assets/images/czyste logo.png" alt="AutoFlow" class="loading-logo-image">
+            </div>
+            <div class="loading-text">
+                <span class="auto-text">Auto</span><span class="flow-text">Flow</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="refreshToTop()">
+                <div class="logo-container">
+                    <div class="logo-image">
+                        <img src="assets/images/czyste logo.png" alt="AutoFlow" class="nav-logo-image">
+                    </div>
+                    <span class="logo-text">
+                        <span class="auto-text">Auto</span><span class="flow-text">Flow</span>
+                    </span>
+                </div>
+            </div>
+            <div class="nav-unified">
+                <ul class="nav-menu">
+                    <li><a href="#home">Start</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="about.html">O nas</a></li>
+                    <li><a href="#testimonials">Opinie</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+                <div class="nav-cta-container">
+                    <a href="#contact" class="cta-button">Rozpocznij współpracę</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="geometric-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="ai-text">AUTOMATYZUJEMY</span><br>
+                    <div class="pill">
+                        <span class="pill__text rotating-word active">Biznes</span>
+                        <span class="pill__text rotating-word">Finanse</span>
+                        <span class="pill__text rotating-word">Bezpieczeństwo</span>
+                        <span class="pill__text rotating-word">Komunikację</span>
+                        <span class="pill__text rotating-word">A nawet o wiele więcej</span>
+                    </div>
+                </h1>
+                <p class="hero-description">
+                    Jesteśmy ekspertami w automatyzacji procesów biznesowych, integracji systemów i optymalizacji
+                    przepływu pracy.
+                    Pomagamy firmom być widzianymi w najlepszym świetle poprzez inteligentne rozwiązania technologiczne.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Rozpocznij współpracę</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nasze Usługi</h2>
+                <p>Kompleksowe rozwiązania automatyzacji dla Twojego biznesu</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automatyzacja Procesów</h3>
+                    <p>Tworzymy inteligentne systemy automatyzujące powtarzalne zadania, od obsługi klienta po
+                        zarządzanie dokumentami. Zwiększ efektywność swojego zespołu o 70%.</p>
+                    <a href="#contact" class="service-link">Sprawdź ofertę <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Integracja Systemów</h3>
+                    <p>Łączymy różne systemy i aplikacje w spójną całość. CRM, ERP, e-commerce - wszystko działa razem
+                        bez problemów z synchronizacją danych.</p>
+                    <a href="#contact" class="service-link">Sprawdź ofertę <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analityka i Raportowanie</h3>
+                    <p>Automatyczne generowanie raportów, dashboardy w czasie rzeczywistym i inteligentna analiza danych
+                        biznesowych dla lepszych decyzji.</p>
+                    <a href="#contact" class="service-link">Sprawdź ofertę <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Chatboty i AI</h3>
+                    <p>Inteligentne chatboty obsługujące klientów 24/7, automatyczne odpowiedzi na e-maile i systemy
+                        wsparcia oparte na sztucznej inteligencji.</p>
+                    <a href="#contact" class="service-link">Sprawdź ofertę <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Automatyzacja w Chmurze</h3>
+                    <p>Rozwiązania chmurowe skalujące się z Twoim biznesem. Automatyczne backupy, monitoring systemów i
+                        optymalizacja kosztów infrastruktury.</p>
+                    <a href="#contact" class="service-link">Sprawdź ofertę <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Bezpieczeństwo i Compliance</h3>
+                    <p>Automatyczne monitorowanie bezpieczeństwa, zgodność z RODO, automatyczne audyty i systemy
+                        wykrywania zagrożeń.</p>
+                    <a href="#contact" class="service-link">Sprawdź ofertę <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-prop">
+        <div class="container">
+            <div class="value-content">
+                <div class="value-text">
+                    <h2>Prezentujemy automatyzację w najlepszym możliwym świetle.</h2>
+                    <p>Każdy proces ma potencjał do optymalizacji. Nasze rozwiązania nie tylko oszczędzają czas i
+                        pieniądze, ale także eliminują błędy ludzkie i zwiększają satysfakcję pracowników. Przekształć
+                        rutynowe zadania w inteligentne procesy — zacznij od analizy, która pokaże ukryte możliwości
+                        Twojej firmy.</p>
+                </div>
+                <div class="value-stats">
+                    <div class="stat">
+                        <div class="stat-number">70%</div>
+                        <div class="stat-label">Redukcja czasu pracy</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Mniej błędów</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Dostępność systemów</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <!-- Main Logo Background -->
+            <div class="hero-logo-bg">
+                <img src="assets/images/czyste logo.png" alt="AutoFlow Logo" class="hero-logo-bg-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nasze Realizacje</h2>
+                <p>Zobacz, jak pomagamy firmom automatyzować ich procesy</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-commerce Plus</h3>
+                        <p>Automatyzacja zarządzania zamówieniami i magazynem. Cel: skrócenie czasu obsługi, mniej
+                            błędów, spójna komunikacja. Stack: Shopify/WooCommerce, Zapier/Make/n8n, Google
+                            Sheets/Airtable, InPost/DHL API, Slack/Email, Looker Studio, Fakturownia/IFIRMA. Efekt:
+                            krótszy fulfillment o 20–35%, mniej błędów pakowania i dokumentów.</p>
+                        <span class="portfolio-tag">E-commerce</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>CorpAuto</h3>
+                        <p>Automatyzacja procesów HR i księgowości. Cel: skrócenie formalności i ograniczenie błędów.
+                            Stack: Google Workspace, Notion/Confluence, Autenti/DocuSign, Slack/Teams, Airtable,
+                            n8n/Make, OCR (Tesseract/Google Vision), lekkie skrypty (Python/JS). Efekt: 40–60% mniej
+                            czasu operacji back-office, mniej korekt dokumentów.</p>
+                        <span class="portfolio-tag">Korporacje</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>DataPulse</h3>
+                        <p>"Single Source of Truth" dla zarządu. Cel: raportowanie sprzedaży i marketingu bez Excela.
+                            Stack: HubSpot/Pipedrive, GA4, Google/Meta Ads, BigQuery, Looker Studio, Airtable; skrypty
+                            ETL (Python/SQL). Efekt: codzienne raporty bez angażowania analityka; decyzje „tu i teraz".
+                        </p>
+                        <span class="portfolio-tag">Analityka</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>SmartHelp</h3>
+                        <p>Asystent AI do obsługi klienta. Cel: odciążenie supportu i szybsze odpowiedzi. Stack:
+                            Zendesk/Freshdesk, Notion (baza wiedzy), webhooki + n8n/Make, LLM z regułami bezpieczeństwa,
+                            krótkie funkcje do parsowania/wzbogacania kontekstu. Efekt: krótszy First Response Time i
+                            mniej powtarzalnych ticketów.</p>
+                        <span class="portfolio-tag">AI & Support</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>LifeAutomation</h3>
+                        <p>Automatyzacje dla osoby prywatnej. Cel: oszczędność czasu w życiu codziennym. Stack:
+                            Gmail/Calendar/Drive, Notion, Todoist, Google Sheets, n8n/Make, małe skrypty. Efekt:
+                            porządek bez ręcznego przerzucania plików i terminów.</p>
+                        <span class="portfolio-tag">Life Hacks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Customer Satisfaction Section -->
+    <section class="satisfaction">
+        <div class="container">
+            <div class="satisfaction-content">
+                <div class="satisfaction-stats">
+                    <div class="rating-display">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <span class="rating-number">4.9/5</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="satisfaction-percentage">98% zadowolonych klientów</div>
+                        <p class="rating-description">Średnia ocena naszych usług na podstawie ponad 100 opinii</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Zobacz, co mówią o współpracy z AutoFlow nasi klienci</h2>
+                <p>Każdemu projektowi poświęcamy się w stu procentach. Nasze zaangażowanie nie pozostaje niezauważone.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"W 6 tygodni zmapowaliśmy procesy HR i wdrożyliśmy automatyzacje: onboarding, generowanie
+                            umów oraz zgłoszenia do ZUS/PPK. Czas wdrożenia pracownika spadł z 3 h do 35 min, a
+                            zespołowi zwolniło się ~12 h tygodniowo na rekrutację. Zero kodu po naszej stronie —
+                            wszystko spięte w Notion, Google Workspace i Slacku. To wreszcie działa tak, jak obiecano."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Lena Rzepnicka</h4>
+                            <span>Dyrektor HR, Nordbyte</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Po integracji sklepu (Shopify) z hurtowniami i kurierami zamówienia same trafiają do WMS,
+                            statusy wracają do klienta, a reklamacje dostają numer sprawy z automatu. W sezonie nie
+                            musiałem zatrudniać dodatkowych osób, a czas realizacji skrócił się średnio o 27%. Najlepsza
+                            decyzja operacyjna ostatniego roku."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Olgierd Baran</h4>
+                            <span>Właściciel, RavenaHome (e-commerce)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Potrzebowaliśmy raportów sprzedażowo-marketingowych niemal w czasie rzeczywistym. Zbudowany
+                            kokpit w Looker Studio + automatyczne czyszczenie danych w Airtable sprawiły, że
+                            zrezygnowaliśmy z ręcznego Excelowania. Zarząd dostaje podsumowania na Slacku codziennie o
+                            8:00. Decyzje podejmujemy na podstawie liczb, nie intuicji."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Daria Kruszyńska</h4>
+                            <span>CEO, InnovateLab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Uspójnienie procesów od zamówienia po wysyłkę (Make + integracje do InPost/DHL, Fakturownia,
+                            CRM) ograniczyło błędy w pakowaniu i dokumentach o ok. 60%, a średni lead time spadł z 48 h
+                            do 29 h. Dodatkowo alerty w Slacku od razu wyłapują spóźnione przesyłki."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Iwo Radliński</h4>
+                            <span>Head of Operations, AutoParts24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Wdrożony asystent AI w helpdesku oraz automatyczny routing ticketów skróciły czas pierwszej
+                            odpowiedzi z 5 h do 45 min. FAQ mamy w Notion, a bot podpowiada odpowiedzi i zbiera kontekst
+                            zamówienia. Zespół supportu wreszcie zajmuje się trudnymi sprawami, a nie powtarzalnymi
+                            pytaniami."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Maja Gierszewska</h4>
+                            <span>Co-founder, EduCraft</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-summary">
+                <div class="summary-card">
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Średnia ocena naszych usług to 4.9/5 na podstawie ponad 100 opinii</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ostatnie artykuły</h2>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card" onclick="showArticle('trendy-2025')">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Automatyzacja</span>
+                        <h3>Trendy w automatyzacji biznesowej 2025</h3>
+                        <p class="blog-meta">15.03.2025 // 8 min czytania</p>
+                        <p class="blog-excerpt">Rok 2025 stoi pod znakiem agentów AI, automatyzacji „end-to-end" i
+                            mierzenia realnego ROI. Firmy budują procesy, które same się uruchamiają, pilnują i
+                            raportują wyniki.</p>
+                    </div>
+                </article>
+
+                <article class="blog-card" onclick="showArticle('ai-analiza')">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Analityka</span>
+                        <h3>Jak AI zmienia analizę danych biznesowych</h3>
+                        <p class="blog-meta">10.03.2025 // 6 min czytania</p>
+                        <p class="blog-excerpt">Z tygodniowych „excelowych poniedziałków" przerzucamy się na codzienne
+                            decyzje. AI skraca drogę od danych do działania i pilnuje jakości.</p>
+                    </div>
+                </article>
+
+                <article class="blog-card" onclick="showArticle('5-procesow')">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-category">Procesy</span>
+                        <h3>5 procesów, które powinieneś zautomatyzować już dziś</h3>
+                        <p class="blog-meta">05.03.2025 // 10 min czytania</p>
+                        <p class="blog-excerpt">Automatyzacja nie musi być wielkim projektem IT. Poniższe pięć procesów
+                            daje szybkie efekty i jest bezpieczne na start.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-more">
+                <button class="btn btn-secondary">Pokaż więcej</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Articles -->
+    <section id="trendy-2025" class="article-section" style="display: none;">
+        <div class="container">
+            <div class="article-content">
+                <button class="back-button" onclick="hideArticle()">← Powrót do bloga</button>
+                <h1>Trendy w automatyzacji biznesowej 2025</h1>
+                <p class="article-meta">15.03.2025 // 8 min czytania</p>
+
+                <div class="article-body">
+                    <p class="lead">Rok 2025 stoi pod znakiem agentów AI, automatyzacji „end-to-end" i mierzenia
+                        realnego ROI. Firmy nie doklejają już pojedynczych integracji — budują procesy, które same się
+                        uruchamiają, same się pilnują i same raportują wyniki.</p>
+
+                    <h2>1) Agenci AI zamiast botów FAQ</h2>
+                    <p>Zamiast sztywnych skryptów pojawiają się agenci, którzy potrafią wykonać zadanie: sprawdzić
+                        status zamówienia, wygenerować fakturę, umówić spotkanie czy zainicjować zwrot. Różnica? Agent
+                        ma dostęp do systemów (CRM, sklep, helpdesk) i potrafi działać według reguł oraz uprawnień.</p>
+                    <p><strong>Co to daje:</strong> krótszy czas odpowiedzi, mniej pracy ręcznej, spójniejsze
+                        doświadczenie klienta.</p>
+
+                    <h2>2) Automatyzacja „bez kodu… i z odrobiną kodu"</h2>
+                    <p>Integratory no-code (Make/Zapier/n8n) przyspieszają wdrożenia, ale największą dźwignię daje
+                        połączenie ich z lekkimi skryptami (Python/JS) — do walidacji danych, ETL czy niestandardowych
+                        wywołań API.</p>
+                    <p><strong>Wniosek:</strong> 80% zrobisz „klikaniem", a brakujące 20% domkniesz krótkim kodem.</p>
+
+                    <h2>3) Raportowanie w rytmie operacji</h2>
+                    <p>Zamiast miesięcznych PDF-ów — codzienne kokpity KPI i alerty: „konwersja spadła o 20%", „lead
+                        time przekroczył 36 h", „wydatki na kampanię X rosną szybciej niż przychód". Raport nie jest
+                        dokumentem, ale wyzwalaczem działania.</p>
+
+                    <h2>4) Standaryzacja danych u źródła</h2>
+                    <p>Największy ból automatyzacji to śmieciowe dane. W 2025 standardem staje się walidacja już na
+                        wejściu: słowniki, typy pól, automatyczna deduplikacja leadów, reguły nazewnictwa kampanii.</p>
+
+                    <h2>5) Governance i bezpieczeństwo w praktyce</h2>
+                    <p>Dostępy per-rola, dzienniki działań agenta, „bezpieczne funkcje" z jasnymi limitami oraz
+                        środowiska testowe do symulacji — to nowa normalność nawet w MŚP.</p>
+
+                    <h2>6) Agentic commerce w e-commerce</h2>
+                    <p>Konwersacyjny koszyk: agent pyta, porównuje, kompletuje zestaw, wypełnia dane i finalizuje
+                        transakcję. Najlepiej działa tam, gdzie asortyment jest złożony, a wybór wymaga doradztwa.</p>
+
+                    <h2>7) ROI, nie „wow-efekt"</h2>
+                    <p>Decyduje twarda metryka: skrócenie czasu, spadek błędów, mniej eskalacji, większa konwersja.
+                        Projekty startują małe, ale mierzalne, i dopiero potem są skalowane.</p>
+
+                    <h2>Jak podejść do automatyzacji w 2025 — krótka mapa</h2>
+                    <ol>
+                        <li>Wybierz 1 proces o dużej powtarzalności i jasnym KPI.</li>
+                        <li>Zmapuj wejścia/wyjścia: dane, narzędzia, osoby decyzyjne.</li>
+                        <li>Zbuduj POC na no-code + mały skrypt (walidacja/ETL).</li>
+                        <li>Dodaj alerty i logi — bez tego nie ma jakości.</li>
+                        <li>Uruchom test A/B: stara vs. nowa ścieżka.</li>
+                        <li>Udokumentuj konfigurację i polityki dostępu.</li>
+                        <li>Skaluj do kolejnych zespołów po dowodzie wartości.</li>
+                    </ol>
+
+                    <p><strong>Co dalej:</strong> zacznij od obsługi zamówień, onboardingu pracownika lub nocnych
+                        raportów KPI. To najczęściej najszybsze wygrane.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-analiza" class="article-section" style="display: none;">
+        <div class="container">
+            <div class="article-content">
+                <button class="back-button" onclick="hideArticle()">← Powrót do bloga</button>
+                <h1>Jak AI zmienia analizę danych biznesowych</h1>
+                <p class="article-meta">10.03.2025 // 6 min czytania</p>
+
+                <div class="article-body">
+                    <p class="lead">Z tygodniowych „excelowych poniedziałków" przerzucamy się na codzienne decyzje. AI
+                        nie zastępuje analityka — skraca drogę od danych do działania i pilnuje jakości.</p>
+
+                    <h2>Od ETL do „konwersacyjnego BI"</h2>
+                    <p><strong>ETL z walidacją:</strong> zrzuty z CRM/Ads/GA4 trafiają do hurtowni (np.
+                        BigQuery/Airtable). Skrypty czyszczą nazwy kampanii, uzupełniają brakujące pola i deduplikują
+                        rekordy.</p>
+                    <p><strong>Semantyka i metryki:</strong> definicje KPI w jednym miejscu (przychód, CAC, LTV,
+                        konwersja). Koniec z „każdy liczy po swojemu".</p>
+                    <p><strong>Warstwa AI:</strong> modele odpowiadają na pytania: „Dlaczego koszyk spadł?", „Który
+                        segment rósł najszybciej?", „Co zrobiło różnicę tydzień do tygodnia?".</p>
+                    <p><strong>Alerty operacyjne:</strong> progi i anomalie odpalają konkretne zadania: bilet do
+                        zespołu, powiadomienie do właściciela procesu, checklistę działań.</p>
+
+                    <h2>Przykładowe zastosowania</h2>
+                    <ul>
+                        <li><strong>Komentarze do wykresów:</strong> automatycznie generowane wnioski przy dashboardzie
+                            (zawsze z progami ufności i źródłem metryki).</li>
+                        <li><strong>Czyszczenie leadów:</strong> łączenie duplikatów, standaryzacja nazw firm,
+                            automatyczna kwalifikacja.</li>
+                        <li><strong>Atrybucja uproszczona:</strong> scenariusze „first touch/last touch" porównywane
+                            automatycznie, zamiast jednego „świętego" modelu.</li>
+                        <li><strong>Prognozy popytu:</strong> krótkoterminowe predykcje na poziomie SKU/segmentu, co
+                            pomaga w planowaniu zatowarowania i budżetów.</li>
+                    </ul>
+
+                    <h2>Jakość danych > magia AI</h2>
+                    <ul>
+                        <li><strong>Słowniki i konwencje nazewnicze:</strong> kampanie i kanały zgodne z checklistą.
+                        </li>
+                        <li><strong>Walidacja pól:</strong> progi, zakresy, typy danych.</li>
+                        <li><strong>Dzienniki transformacji:</strong> kto, kiedy, co zmienił.</li>
+                        <li><strong>Sampling i testy kontrolne:</strong> czy liczby z dashboardu zgadzają się z systemem
+                            źródłowym.</li>
+                    </ul>
+
+                    <h2>Ramy wdrożenia 30-60-90 dni</h2>
+                    <p><strong>0–30 dni (POC):</strong> inwentaryzacja źródeł, import minimum danych, definicje 5 KPI,
+                        pierwszy dashboard + alerty anomalii.</p>
+                    <p><strong>31–60 dni (MVP):</strong> automatyzacja zasileń (harmonogramy), walidacje i reguły
+                        naprawcze, pierwsze komentarze AI do wykresów.</p>
+                    <p><strong>61–90 dni (skalowanie):</strong> „konwersacyjny BI" dla managerów, log uprawnień,
+                        playbook incydentów, szkolenie zespołów.</p>
+
+                    <h2>Najczęstsze błędy i jak ich uniknąć</h2>
+                    <ul>
+                        <li>Za dużo na start: weź 5 KPI, nie 50.</li>
+                        <li>Brak właściciela danych: ktoś musi podejmować decyzje o definicjach.</li>
+                        <li>Brak logów i testów: bez nich nie znajdziesz źródła błędu.</li>
+                        <li>Brak „closing the loop": alerty bez przypisanego zadania nie zmieniają rzeczywistości.</li>
+                    </ul>
+
+                    <p><strong>Co dalej:</strong> jeśli nie wiesz, od czego zacząć — zrób dzienny raport „Stan sprzedaży
+                        i kosztu reklam" + alerty spadku konwersji. To najszybszy zwrot z inwestycji.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="5-procesow" class="article-section" style="display: none;">
+        <div class="container">
+            <div class="article-content">
+                <button class="back-button" onclick="hideArticle()">← Powrót do bloga</button>
+                <h1>5 procesów, które powinieneś zautomatyzować już dziś</h1>
+                <p class="article-meta">05.03.2025 // 10 min czytania</p>
+
+                <div class="article-body">
+                    <p class="lead">Automatyzacja nie musi być wielkim projektem IT. Poniższe pięć procesów daje szybkie
+                        efekty i jest bezpieczne na start.</p>
+
+                    <h2>1) Obsługa zamówień (e-commerce B2C/B2B)</h2>
+                    <p><strong>Przed:</strong> kopiowanie danych do kuriera, ręczne faktury, brak spójnych statusów.</p>
+                    <p><strong>Po:</strong> zamówienie → płatność zweryfikowana → automatyczna etykieta → faktura PDF →
+                        status do klienta → aktualizacja w CRM/WMS.</p>
+                    <p><strong>Co skonfigurować:</strong> integracja sklepu z kurierami i fakturowaniem, walidacja
+                        adresu i metody wysyłki, powiadomienia do klienta i na Slacka, dashboard czasu realizacji i %
+                        zwrotów.</p>
+                    <p><strong>KPI:</strong> średni czas realizacji, liczba błędów pakowania, reklamacje.</p>
+
+                    <h2>2) Onboarding pracownika</h2>
+                    <p><strong>Przed:</strong> umowy w Wordzie, szukanie szablonów dostępów, opóźnienia w sprzęcie.</p>
+                    <p><strong>Po:</strong> formularz danych → automatyczna umowa i podpis → checklisty dostępu IT →
+                        przypomnienia o badaniach i szkoleniach.</p>
+                    <p><strong>Co skonfigurować:</strong> szablony dokumentów i podpis elektroniczny, przydział ról w
+                        systemach, harmonogram zadań dla HR/IT/managera, pakiet „dzień 1": dostęp do narzędzi,
+                        przewodnik, kontakt.</p>
+                    <p><strong>KPI:</strong> czas od akceptacji do gotowości, liczba braków w dokumentach, satysfakcja
+                        nowego pracownika po 14 dniach.</p>
+
+                    <h2>3) Rozliczanie faktur kosztowych</h2>
+                    <p><strong>Przed:</strong> ręczne wprowadzanie, pomyłki w kwotach i datach, zaległości na koniec
+                        miesiąca.</p>
+                    <p><strong>Po:</strong> skrzynka „faktury@" → OCR → walidacja pól → akceptacja → eksport do
+                        księgowości → numer sprawy i status dla zespołu.</p>
+                    <p><strong>Co skonfigurować:</strong> reguły walidacji (NIP, kwoty, VAT, daty), ścieżki akceptacji i
+                        limity, archiwum w chmurze i numeracja, raport zamknięcia miesiąca.</p>
+                    <p><strong>KPI:</strong> czas od wpływu do zaksięgowania, liczba korekt, odsetek faktur z błędem.
+                    </p>
+
+                    <h2>4) Raporty zarządcze i alerty</h2>
+                    <p><strong>Przed:</strong> przestarzałe dane i decyzje „na czuja".</p>
+                    <p><strong>Po:</strong> nocne zasilenia danych + poranny raport KPI + alerty anomalii (konwersja,
+                        marża, lead time).</p>
+                    <p><strong>Co skonfigurować:</strong> definicje 5–7 KPI, harmonogram ETL, progi alertów i odbiorcy,
+                        komentarze do wykresów generowane automatycznie.</p>
+                    <p><strong>KPI:</strong> odsetek decyzji podjętych w 24h, czas reakcji na alert, zgodność danych z
+                        systemem źródłowym.</p>
+
+                    <h2>5) Lead routing i wzbogacanie</h2>
+                    <p><strong>Przed:</strong> leady giną w skrzynkach, klient czeka, brak priorytetyzacji.</p>
+                    <p><strong>Po:</strong> każdy lead trafia do właściwego handlowca wg reguł
+                        (produkt/region/pojemność), jest wzbogacony o dane firmy i ma SLA w minutach.</p>
+                    <p><strong>Co skonfigurować:</strong> formularz z weryfikacją pól, scoring i reguły przydziału,
+                        automatyczne przypomnienia i eskalacje, playbook follow-upów.</p>
+                    <p><strong>KPI:</strong> czas do pierwszego kontaktu, konwersja lead → szansa, udział leadów bez
+                        właściciela.</p>
+
+                    <h2>Jak zacząć w 7 dni — mini plan</h2>
+                    <ul>
+                        <li><strong>Dzień 1–2:</strong> wybór procesu + mapa kroków, definicja 3 KPI.</li>
+                        <li><strong>Dzień 3–4:</strong> POC w integratorze + prosty skrypt walidacji.</li>
+                        <li><strong>Dzień 5:</strong> test „happy path" + obsługa 2 błędów.</li>
+                        <li><strong>Dzień 6:</strong> alerty i logowanie zdarzeń.</li>
+                        <li><strong>Dzień 7:</strong> wdrożenie pilota i retro po tygodniu.</li>
+                    </ul>
+
+                    <p><strong>Template KPI do skopiowania:</strong></p>
+                    <ul>
+                        <li><strong>Czas:</strong> średni czas realizacji [min/h].</li>
+                        <li><strong>Jakość:</strong> % błędów/eskalacji.</li>
+                        <li><strong>Skala:</strong> liczba przetworzonych spraw/dzień.</li>
+                        <li><strong>Wpływ:</strong> oszczędność godzin/tydz. lub wzrost konwersji [%].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Masz procesy, które chcesz zautomatyzować?</h2>
+                    <p>Rozpocznij z nami współpracę i odkryj potencjał automatyzacji w Twojej firmie.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kontakt@autoflow.pl</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+48 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Warszawa, Polska</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Adres e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" name="company" placeholder="Nazwa firmy">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Wybierz usługę</option>
+                                <option value="automation">Automatyzacja procesów</option>
+                                <option value="integration">Integracja systemów</option>
+                                <option value="analytics">Analityka i raportowanie</option>
+                                <option value="chatbots">Chatboty i AI</option>
+                                <option value="cloud">Automatyzacja w chmurze</option>
+                                <option value="security">Bezpieczeństwo</option>
+                                <option value="consultation">Konsultacja</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Opisz swoje potrzeby..." rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Wyślij zapytanie</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Documents -->
+    <section id="privacy-policy" class="legal-section" style="display: none;">
+        <div class="container">
+            <h2>Polityka Prywatności</h2>
+            <div class="legal-content">
+                <h3>1. Administrator danych</h3>
+                <p>Administratorem danych jest [Twoje imię i nazwisko], prowadzący działalność jako osoba fizyczna
+                    (freelancer). Kontakt: [email], [telefon], korespondencyjnie [adres].</p>
+
+                <h3>2. Zakres, cele i podstawy przetwarzania</h3>
+                <p>Przetwarzamy dane:</p>
+                <ul>
+                    <li>formularz kontaktowy/zapytania ofertowe — aby odpowiedzieć (art. 6 ust. 1 lit. f RODO);</li>
+                    <li>realizacja umów i rozliczenia — w tym wystawianie faktur przez Useme.com (art. 6 ust. 1 lit. b i
+                        c RODO);</li>
+                    <li>newsletter/marketing — wyłącznie za zgodą (art. 6 ust. 1 lit. a RODO);</li>
+                    <li>analiza ruchu i bezpieczeństwo (logi, anty-spam) — prawnie uzasadniony interes (art. 6 ust. 1
+                        lit. f RODO).</li>
+                </ul>
+
+                <h3>3. Odbiorcy danych</h3>
+                <p>Podmioty przetwarzające dane w naszym imieniu:</p>
+                <ul>
+                    <li>Useme sp. z o.o. (pośrednictwo rozliczeń i wystawianie faktur),</li>
+                    <li>dostawca hostingu i utrzymania serwisu,</li>
+                    <li>dostawcy narzędzi komunikacji, analityki i CRM,</li>
+                    <li>biuro rachunkowe i firmy kurierskie (jeśli konieczne do realizacji umowy).</li>
+                </ul>
+
+                <h3>4. Prawa osób</h3>
+                <p>Prawo dostępu, sprostowania, usunięcia, ograniczenia, przenoszenia, sprzeciwu oraz prawo wniesienia
+                    skargi do Prezesa UODO. Dla realizacji praw skontaktuj się: [email do spraw RODO].</p>
+
+                <h3>5. Kontakt</h3>
+                <p>W sprawach danych osobowych: hoshinouta00@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="terms" class="legal-section" style="display: none;">
+        <div class="container">
+            <h2>Regulamin świadczenia usług</h2>
+            <div class="legal-content">
+                <h3>1. Postanowienia ogólne</h3>
+                <p>Usługodawca: Damian Teterycz prowadzący działalność jako osoba fizyczna (freelancer).<br>
+                    Serwis: [adres strony] - to uzupełnimy, jak wypuścimy stronę.<br>
+                    Klient: podmiot składający zamówienie.<br>
+                    Rozliczenia prowadzone za pośrednictwem Useme.com.</p>
+
+                <h3>2. Zakres usług</h3>
+                <p>Doradztwo, projektowanie i wdrożenia automatyzacji (no-code/low-code/kod), integracje systemów,
+                    konsultacje i utrzymanie, tworzenie stron, pozycjonowanie.</p>
+
+                <h3>3. Proces współpracy</h3>
+                <p>Brief → wycena → akceptacja → realizacja iteracyjna (milestone'y) → odbiór → rozliczenie przez Useme
+                    (faktura). Terminy i zakres każdorazowo wskazane w ofercie/zamówieniu.</p>
+
+                <h3>4. Prawa autorskie</h3>
+                <p>Po zapłacie Usługodawca przenosi na Klienta autorskie prawa majątkowe do wytworzonych utworów
+                    (kod/skrypty/konfiguracje) w zakresie uzgodnionym w ofercie (utrwalanie, zwielokrotnianie,
+                    modyfikacje, wdrażanie). Usługodawca może wykorzystywać uniwersalne elementy (snippety, szablony) w
+                    innych projektach, chyba że strony uzgodnią inaczej.</p>
+
+                <h3>5. Kontakt</h3>
+                <p>Reklamacje można zgłaszać na adres e-mail [email] w terminie 14 dni od zdarzenia. Rozpatrzenie
+                    nastąpi w ciągu 14 dni roboczych.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cookies" class="legal-section" style="display: none;">
+        <div class="container">
+            <h2>Polityka cookies</h2>
+            <div class="legal-content">
+                <h3>1. Czym są cookies</h3>
+                <p>Cookies to niewielkie pliki zapisywane na urządzeniu użytkownika. Używamy ich, by zapewnić działanie
+                    serwisu, prowadzić analitykę i działania marketingowe.</p>
+
+                <h3>2. Rodzaje cookies</h3>
+                <ul>
+                    <li>niezbędne (utrzymanie sesji, bezpieczeństwo),</li>
+                    <li>analityczne (statystyki odwiedzin),</li>
+                    <li>marketingowe (personalizacja treści i reklam).</li>
+                </ul>
+
+                <h3>3. Podstawy prawne</h3>
+                <p>Dla cookies niezbędnych — niezbędność do świadczenia usługi drogą elektroniczną; dla
+                    analitycznych/marketingowych — zgoda użytkownika wyrażana w banerze cookies. Zgody możesz w każdej
+                    chwili wycofać.</p>
+
+                <h3>4. Zarządzanie cookies</h3>
+                <p>Użytkownik może zarządzać zgodami w banerze oraz w ustawieniach przeglądarki. Wyłączenie niezbędnych
+                    cookies może utrudnić korzystanie z serwisu.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><span class="auto-text">Auto</span><span class="flow-text">Flow</span></h3>
+                    <p>Automatyzujemy Twój biznes</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Usługi</h4>
+                        <ul>
+                            <li><a href="#services">Automatyzacja procesów</a></li>
+                            <li><a href="#services">Integracja systemów</a></li>
+                            <li><a href="#services">Analityka</a></li>
+                            <li><a href="#services">Chatboty i AI</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Firma</h4>
+                        <ul>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#testimonials">Opinie</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li>kontakt@autoflow.pl</li>
+                            <li>+48 123 456 789</li>
+                            <li>Warszawa, Polska</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoFlow. Wszystkie prawa zastrzeżone.</p>
+                <div class="footer-legal">
+                    <a href="#privacy-policy">Polityka Prywatności</a>
+                    <a href="#terms">Regulamin</a>
+                    <a href="#cookies">Polityka cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

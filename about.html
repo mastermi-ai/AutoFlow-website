@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas - AutoFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body style="background: #000000; margin: 0; padding: 0;">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="refreshToTop()">
+                <div class="logo-container">
+                    <div class="logo-image">
+                        <img src="assets/images/czyste logo.png" alt="AutoFlow" class="nav-logo-image">
+                    </div>
+                    <span class="logo-text">
+                        <span class="auto-text">Auto</span><span class="flow-text">Flow</span>
+                    </span>
+                </div>
+            </div>
+            <div class="nav-unified">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="index.html#services">Usługi</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="about.html" class="active">O nas</a></li>
+                    <li><a href="index.html#testimonials">Opinie</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                </ul>
+                <div class="nav-cta-container">
+                    <a href="index.html#contact" class="cta-button">Rozpocznij współpracę</a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>O nas</h2>
+                <p>Poznaj zespół ekspertów, którzy pomagają firmom automatyzować procesy</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-intro">
+                    <h3>Nasza misja</h3>
+                    <p>AutoFlow powstało z pasji do automatyzacji i sztucznej inteligencji. Wierzymy, że każdy proces
+                        biznesowy można zoptymalizować, a technologia powinna służyć ludziom, a nie odwrotnie. Naszym
+                        celem jest dostarczanie rozwiązań, które rzeczywiście działają i przynoszą mierzalne rezultaty.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="assets/images/team/CEO & Founder.jpg" alt="Damian Teterycz - CEO AutoFlow"
+                                class="member-image">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Damian Teterycz</h3>
+                            <h4>CEO & Founder</h4>
+                            <p class="member-bio">Od lat projektuję rozwiązania oparte na sztucznej inteligencji — od
+                                automatyzacji zadań po inteligentne wsparcie sprzedaży. Mam praktyczne doświadczenie w
+                                e-commerce w obszarze sprzedaży artykułów, co pomaga mi łączyć technologię z realnymi
+                                potrzebami klientów. Stawiam na proste wdrożenia, które szybko dowożą efekt. Działam
+                                tam, gdzie AI naprawdę skraca czas i zwiększa konwersję.</p>
+                            <div class="member-specializations">
+                                <span class="specialization-tag">AI & Machine Learning</span>
+                                <span class="specialization-tag">E-commerce Automation</span>
+                                <span class="specialization-tag">Sales Intelligence</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="assets/images/team/Adrian Szymański.jpg" alt="Adrian Szymański - COO AutoFlow"
+                                class="member-image">
+                            <div class="member-overlay">
+                                <div class="member-social">
+                                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Adrian Szymański</h3>
+                            <h4>COO & Founder</h4>
+                            <p class="member-bio">Jako COO & Founder odpowiadam za operacyjne dowiezienie wyników: od
+                                założenia i optymalizacji Wizytówki Google, przez pozycjonowanie, po wdrożenia
+                                WordPress. Łączę procesy i technologię, żeby strona była szybka, łatwa do znalezienia i
+                                konwertowała. Stawiam na praktykę: mierzalne efekty, lokalne SEO i przejrzyste
+                                wdrożenia.</p>
+                            <div class="member-specializations">
+                                <span class="specialization-tag">SEO & Digital Marketing</span>
+                                <span class="specialization-tag">WordPress Development</span>
+                                <span class="specialization-tag">Local SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><span class="auto-text">Auto</span><span class="flow-text">Flow</span></h3>
+                    <p>Automatyzujemy Twój biznes</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Usługi</h4>
+                        <ul>
+                            <li><a href="index.html#services">Automatyzacja procesów</a></li>
+                            <li><a href="index.html#services">Integracje systemów</a></li>
+                            <li><a href="index.html#services">AI & Machine Learning</a></li>
+                            <li><a href="index.html#services">Chatboty i AI</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Firma</h4>
+                        <ul>
+                            <li><a href="index.html#portfolio">Portfolio</a></li>
+                            <li><a href="index.html#testimonials">Opinie</a></li>
+                            <li><a href="index.html#blog">Blog</a></li>
+                            <li><a href="index.html#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt</h4>
+                        <ul>
+                            <li>kontakt@autoflow.pl</li>
+                            <li>+48 123 456 789</li>
+                            <li>Warszawa, Polska</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoFlow. Wszystkie prawa zastrzeżone.</p>
+                <div class="footer-legal">
+                    <a href="index.html#privacy-policy">Polityka Prywatności</a>
+                    <a href="index.html#terms">Regulamin</a>
+                    <a href="index.html#cookies">Polityka cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
