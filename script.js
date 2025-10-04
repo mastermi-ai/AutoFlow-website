@@ -684,11 +684,22 @@ function initMobileMenu() {
     }
 }
 
+// Scroll to section function for mobile tiles
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
 // Initialize all features safely
 document.addEventListener('DOMContentLoaded', function () {
     // Uruchom liquid blur effect
     initLiquidBlur();
-
+    
     // Initialize mobile menu
     initMobileMenu();
 
