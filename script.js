@@ -688,7 +688,7 @@ function initMobileMenu() {
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
-        section.scrollIntoView({ 
+        section.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
@@ -699,7 +699,7 @@ function scrollToSection(sectionId) {
 document.addEventListener('DOMContentLoaded', function () {
     // Uruchom liquid blur effect
     initLiquidBlur();
-    
+
     // Initialize mobile menu
     initMobileMenu();
 
